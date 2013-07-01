@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrap{
+	background-color:#FFF;
+	margin:auto;
+}
+
+#header{
+	width:100%;
+	height:80px;
+	float:left;
+}
+
+.top_bar{
+	background-color:#484444;
+	width:100%;
+	height:34px;
+	float:left;
+}
+
+.lower_bar{
+	background-color:#ffd100;
+	width:100%;
+	float:left;
+	height:8px;
+}
+
+.top-gradient{
+	background-image:url(../../images/top_gradient.png);
+	background-repeat:repeat;
+	float:left;
+	width:100%;
+	height:75px;
+}
+
+.header-gradient{
+	background-image:url(../../images/header_gradient.png);
+	background-repeat:repeat;
+	float:left;
+	width:100%;
+	height:110px;
+}
+
+.logo{
+	background-image:url(../../images/cheetah_logo.png);
+	width:156px;
+	height:85px;
+	float:left;
+	background-repeat:no-repeat;
+	margin:20px 0 0  5px;
+}
+	
+.donate-btn{
+	background-image:url(../../images/donate_btn.png);
+	width:163px;
+	height:63px;
+	float:left;
+	background-repeat:no-repeat;
+	margin:0px 0 50px 25px;
+}
+	
+.links_space{
+	width:600px;
+	height:20px;
+	float:left;
+	margin:2px 0 0 100px;
+}
+
+.link{
+	margin:2px 0 0 2px;
+	float:left;
+	width:150px;
+	height:20px;
+	color:#FFF;
+	font-weight:100;
+	font-family:Verdana, Geneva, sans-serif;
+}
+	
+
+#content{
+	float:left;
+	width:100%;
+	height:550px;
+}
+ 
+#footer{
+	background-color:#484444;
+	width:100%;
+	height:100px;
+	float:left;
+	margin-bottom:0px;
+}
+
