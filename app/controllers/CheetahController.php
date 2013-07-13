@@ -6,11 +6,12 @@ class CheetahController extends BaseController {
      * Display a listing of the resource.
      *
      * @return Response
-     */
+     */                                                                                                                 
     public function getIndex()
     {
         //
         return View::make('home.cheetah');
+        //return View::make('guests.index') -> with('guests', Guest::all());
     }
 
     /**
@@ -42,6 +43,9 @@ class CheetahController extends BaseController {
     public function show($id)
     {
         //
+        $guest = Guest::find($id);
+
+        return View::make('guests.show', compact('guest'));
     }
 
     /**

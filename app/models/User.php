@@ -24,6 +24,13 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 *
 	 * @return mixed
 	 */
+
+	// Added code to counter "Access to undeclared static property: User::$rules" Error
+	public static $rules = array();
+	//public static $unguarded = true;
+	protected $guarded = array();
+
+
 	public function getAuthIdentifier()
 	{
 		return $this->getKey();
@@ -57,7 +64,24 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	public function fullName()
 	{
-		return $this->first_name . ' ' . $this->last_name;
+		return $this->firstname . ' ' . $this->lastname;
 	}
 
+	public function collegeName()
+	{
+		return $this->school;
+	}
+
+	public function email()
+	{
+		return $this->email;
+	}
+
+	public function phone(){
+		return $this->terms;
+	}
+
+	public function school(){
+		return $this->school;
+	}
 }

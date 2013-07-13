@@ -83,6 +83,7 @@ class AccountController extends AuthorizedController
 			// Redirect to the register page.
 			//
 			return Redirect::to('account')->with('success', 'Account updated with success!');
+			// return Redirect::to('account')->with('success', 'Account updated with success!');
 		}
 
 		// Something went wrong.
@@ -144,7 +145,8 @@ class AccountController extends AuthorizedController
 			{
 				// Redirect to the users page.
 				//
-				return Redirect::to('account')->with('success', 'You have logged in successfully');
+				// return Redirect::to('account')->with('success', 'You have logged in successfully');
+				return Redirect::to('/')->with('success', 'You have logged in successfully');
 			}
 			else
 			{
